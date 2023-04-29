@@ -1,2 +1,2 @@
-# business_card
-deploying a business card
+# my_business_card
+creating my own business card

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f1f1f1;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsla(339, 100%, 55%, 1);
+
+        background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+
+        background: -moz-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+
+        background: -webkit-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1);
+    }
+
+    .card {
+        width: 50vw;
+        height: 50vh;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 8px solid #000;
+        background-image: linear-gradient(10deg,
+                hsl(240deg 100% 20%) 0%,
+                hsl(311deg 100% 25%) 10%,
+                hsl(334deg 100% 40%) 20%,
+                hsl(6deg 98% 61%) 30%,
+                hsl(37deg 100% 50%) 40%,
+                hsl(55deg 100% 50%) 50%,
+                hsl(54deg 100% 67%) 60%,
+                hsl(53deg 100% 76%) 70%,
+                hsl(53deg 100% 84%) 80%,
+                hsl(53deg 100% 92%) 90%,
+                hsl(0deg 0% 100%) 100%);
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .card .image img {
+        border-radius: 50vw;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #000;
+        transition: text-shadow 1s ease-in-out;
+    }
+
+    h1:hover {
+        text-shadow: 1px 1px 0px red, 2px 2px 0px orange, 3px 3px 0px yellow, 4px 4px 0px green, 5px 5px 0px blue, 6px 6px 0px indigo, 7px 7px 0px violet;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #000;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: #000;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="./engineer.jpg" alt="">
+            </div>
+            <div class="details">
+                <h1>Rajesh</h1>
+                <h2>Full Stack Developer</h2>
+                <h2>Data Scientist</h2>
+                <h2>devops Engineer</h2>
+                <h3>Hyderabad</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
